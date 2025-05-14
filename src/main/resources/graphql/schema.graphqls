@@ -1,0 +1,21 @@
+type Producto{
+    id:ID!
+    nombre:String!
+    descripcion:String!
+    categoria:String!
+    precio:Float!
+    estado:Boolean!
+}
+
+input ProductoInput{
+    nombre:String!
+    descripcion:String!
+    categoria:String!
+    precio:Float!
+    estado:Boolean!
+}
+
+type Query{
+    productos(producto: ProductoInput):[Producto]!
+    producto(id: ID!):Producto
+}
