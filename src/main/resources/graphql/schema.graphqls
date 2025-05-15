@@ -15,7 +15,24 @@ input ProductoInput{
     estado:Boolean!
 }
 
-type Query{
-    productos(producto: ProductoInput):[Producto]!
-    producto(id: ID!):Producto
+type Compra{
+    id:ID!
+    nombreproducto:String!
+    cantidadProductosCompra:Int!
 }
+
+input CompraInput{
+    nombreproducto:String!
+    cantidadProductosCompra:Int!
+}
+
+type Query{
+    productos(Producto: ProductoInput):[Producto]!
+    producto(id: ID!):Producto
+    compras(Compra: CompraInput):[Compra]!
+    compra(id: ID!):Compra
+}
+
+
+
+
