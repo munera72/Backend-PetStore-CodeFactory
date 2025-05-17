@@ -25,12 +25,12 @@ public class VentaResolver {
     }
 
     @QueryMapping
-    public Venta ventaInsertar(@Argument String usuario, @Argument Double total, @Argument String mediopago,@Argument boolean ventaespecial) {
-        return ventaRepository.save(new Venta(usuario,total,mediopago,ventaespecial));
+    public Venta ventaInsertar(@Argument String usuario, @Argument Double total, @Argument String mediopago,@Argument boolean ventaespecial, @Argument int cantidadProductosVenta) {
+        return ventaRepository.save(new Venta(usuario,total,mediopago,ventaespecial,cantidadProductosVenta));
 
     }
 
-    public record VentaInput(String usuario, Double total, String mediopago, Boolean ventaespecial) {}
+    public record VentaInput(String usuario, Double total, String mediopago, Boolean ventaespecial, int cantidadProductosVenta) {}
 
     @MutationMapping(name = "insertarVenta")
     public Venta insertarVenta(@Argument VentaInput ventaInput) {
@@ -39,6 +39,7 @@ public class VentaResolver {
         venta.setTotal(ventaInput.total());
         venta.setMediopago(ventaInput.mediopago());
         venta.setVentaespecial(ventaInput.ventaespecial());
+        venta.setCantidadProductosVenta(ventaInput.cantidadProductosVenta());
         return ventaRepository.save(venta);
     }
 
@@ -56,6 +57,7 @@ public class VentaResolver {
         venta.setTotal(ventaInput.total());
         venta.setMediopago(ventaInput.mediopago());
         venta.setVentaespecial(ventaInput.ventaespecial());
+        venta.setCantidadProductosVenta(ventaInput.cantidadProductosVenta());
 
         return ventaRepository.save(venta);
     }

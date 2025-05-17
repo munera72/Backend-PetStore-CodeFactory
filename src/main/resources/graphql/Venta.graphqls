@@ -4,6 +4,7 @@ type Venta{
     total : Float!
     mediopago : String!
     ventaespecial:Boolean!
+    cantidadProductosVenta:Int!
 }
 
 input VentaInput{
@@ -11,5 +12,6 @@ input VentaInput{
     total : Float!
     mediopago : String!
     ventaespecial:Boolean!
+    cantidadProductosVenta:Int!
 }
 
