@@ -15,17 +15,17 @@ public class Venta {
     private Double total;
     private String mediopago;
     private Boolean ventaespecial = false;
-    private int cantidadProductosVenta;
+    private int cantidadproductosventa;
 
     public Venta() {
     }
 
-    public Venta(String usuario, Double total, String mediopago, Boolean ventaespecial, int cantidadProductosVenta) {
+    public Venta(String usuario, Double total, String mediopago, Boolean ventaespecial, int cantidadproductosventa) {
         this.usuario = usuario;
         this.total = total;
         this.mediopago = mediopago;
         this.ventaespecial = ventaespecial;
-        this.cantidadProductosVenta = cantidadProductosVenta;
+        this.cantidadproductosventa = cantidadproductosventa;
     }
 
     public Long getId() {
@@ -68,10 +68,10 @@ public class Venta {
         this.usuario = usuario;
     }
 
-    public int getCantidadProductosVenta() {return cantidadProductosVenta; }
+    public int getCantidadProductosVenta() {return cantidadproductosventa; }
 
-    public void setCantidadProductosVenta(int cantidadProductosVenta) {
-        this.cantidadProductosVenta = cantidadProductosVenta;
+    public void setCantidadProductosVenta(int cantidadproductosventa) {
+        this.cantidadproductosventa = cantidadproductosventa;
     }
 
     @Override
@@ -80,7 +80,7 @@ public class Venta {
                 "usuario='" + usuario + '\'' +
                 ", total=" + total +
                 ", mediopago='" + mediopago + '\'' +
-                ", cantidadProductosVenta='" + cantidadProductosVenta + '\'' +
+                ", cantidadProductosVenta='" + cantidadproductosventa + '\'' +
                 ", ventaespecial=" + ventaespecial +
                 '}';
     }
