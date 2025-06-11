@@ -20,6 +20,7 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        throw new UnsupportedOperationException("Esta función no se ha implementado");
     }
 
     public ProductoRepository getProductoRepository() {
