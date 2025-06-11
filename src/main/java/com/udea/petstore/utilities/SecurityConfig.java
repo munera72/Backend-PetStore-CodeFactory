@@ -1,4 +1,4 @@
-package com.udea.petstore.Utilities;
+package com.udea.petstore.utilities;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

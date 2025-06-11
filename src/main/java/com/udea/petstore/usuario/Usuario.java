@@ -1,5 +1,4 @@
-package com.udea.petstore.Usuario;
-import jakarta.persistence.*;
+package com.udea.petstore.usuario;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;

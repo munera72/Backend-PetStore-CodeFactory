@@ -1,9 +1,8 @@
-package com.udea.petstore.Utilities;
+package com.udea.petstore.utilities;
 
 import org.springframework.stereotype.Component;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Component;
 
 @Component
 public class PasswordEncryptor {

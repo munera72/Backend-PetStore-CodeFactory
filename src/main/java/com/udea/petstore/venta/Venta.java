@@ -1,10 +1,8 @@
-package com.udea.petstore.Venta;
+package com.udea.petstore.venta;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 public class Venta {

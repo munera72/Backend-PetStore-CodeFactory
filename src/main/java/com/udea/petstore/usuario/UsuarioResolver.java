@@ -1,12 +1,10 @@
-package com.udea.petstore.Usuario;
+package com.udea.petstore.usuario;
 
-import com.udea.petstore.Compra.Compra;
-import com.udea.petstore.Compra.CompraResolver;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
-import com.udea.petstore.Utilities.PasswordEncryptor;
+import com.udea.petstore.utilities.PasswordEncryptor;
 
 import java.util.List;
 

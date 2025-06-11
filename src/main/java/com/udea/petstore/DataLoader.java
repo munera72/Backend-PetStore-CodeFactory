@@ -1,15 +1,9 @@
 package com.udea.petstore;
-import com.udea.petstore.Compra.Compra;
-import com.udea.petstore.Compra.CompraRepository;
-import com.udea.petstore.Producto.Producto;
-import com.udea.petstore.Producto.ProductoRepository;
-import com.udea.petstore.Venta.Venta;
-import com.udea.petstore.Venta.VentaRepository;
+import com.udea.petstore.compra.CompraRepository;
+import com.udea.petstore.producto.ProductoRepository;
+import com.udea.petstore.venta.VentaRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.springframework.graphql.data.method.annotation.QueryMapping;
-
-import java.util.List;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -28,5 +22,15 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
     }
 
+    public ProductoRepository getProductoRepository() {
+        return productoRepository;
+    }
 
+    public CompraRepository getCompraRepository() {
+        return compraRepository;
+    }
+
+    public VentaRepository getVentaRepository() {
+        return ventaRepository;
+    }
 }

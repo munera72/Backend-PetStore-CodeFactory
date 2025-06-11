@@ -1,4 +1,4 @@
-package com.udea.petstore.Producto;
+package com.udea.petstore.producto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
