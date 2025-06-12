@@ -18,10 +18,13 @@ public class DataLoader implements CommandLineRunner {
         this.ventaRepository = ventaRepository;
     }
 
+    /**
     @Override
     public void run(String... args) throws Exception {
         //throw new UnsupportedOperationException("Esta función no se ha implementado");
     }
+    */
+
 
     public ProductoRepository getProductoRepository() {
         return productoRepository;
@@ -33,5 +36,10 @@ public class DataLoader implements CommandLineRunner {
 
     public VentaRepository getVentaRepository() {
         return ventaRepository;
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+
     }
 }
